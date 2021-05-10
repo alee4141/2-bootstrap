@@ -71,11 +71,11 @@
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+                <h2 class="text-sm-right">Featured Campsites</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake">
+                    <img class="d-flex ml-3 img-thumbnail order-last" src="img/react-lake-thumb.jpg">
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
                         <p class="d-none d-sm-block">nestles in the foothills of the chrome mountains, this campground
@@ -103,6 +103,43 @@
                 </div>
             </div>
         </div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select class="form-control" name="numCampers" id="numCampers">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class=" col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="date">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="site-footer">
@@ -133,43 +170,7 @@
                 </div>
             </div>
 
-            <div class="row row-content">
-                <div class="col-sm-6 mx-auto">
-                    <div class="card">
-                        <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
-                        <div class="card-body">
-                            <form id="reserveForm">
-                                <div class="form-group row">
-                                    <label class="col-sm-6 col-form-label">Number of Campers</label>
-                                    <div class="col">
-                                        <select class="form-control" name="numCampers" id="numCampers">
-                                            <option>Select...</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class=" col-sm-6 col-form-label" for="date">Date</label>
-                                    <div class="col-sm-6">
-                                        <input class="form-control" type="date" id="date" name="date" placeholder="date">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col">
-                                        <button class="btn btn-primary" type="submit">Search</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+           
         </div>
     </footer>
 
